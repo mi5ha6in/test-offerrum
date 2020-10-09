@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.min.css">
+  </script>
+  <title>Nootris</title>
+</head>
+
+<body class="page">
+  <header class="header">
+    <div class="header__wrapper">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+
+        <a class="main-nav__logo logo" href="#">
+          <img src="img/logo_nootris.svg" alt="Nootris" width="120">
+        </a>
+
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                FAQ
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Оплата и доставка
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Возврат
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Исследования
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Личный кабинет
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="tel:88006000990">
+                8 (800) 600-09-90
+              </a>
+            </li>
+          </ul>
+
+          <a class="main-nav__basket" aria-label="Корзина" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+              <use xlink:href="img/sprite.svg#icon-basket"></use>
+            </svg>
+            <span class="main-nav__basket-count">1</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page__main">
+    <section class="immunity">
+      <div class="immunity__wrapper">
+        <h1 class="visually-hidden">Nootris</h1>
+        <div class="immunity__main">
+          <p class="immunity__main-heading">
+            Активируй иммунитет!
+          </p>
+
+          <p class="immunity__main-text">
+            Всего пять секунд в день помогут укрепить иммунитет
+            и повысить защитные силы организма
+          </p>
+
+          <picture>
+            <source type="image/webp" media="(min-width: 769px)"
+              srcset="img/nootris_683.webp 1x, img/nootris_1366.webp 2x">
+            <source type="image/webp" media="(min-width: 576px)"
+              srcset="img/nootris_320.webp 1x, img/nootris_683.webp 2x">
+            <source type="image/webp" srcset="img/nootris_160.webp 1x, img/nootris_320.webp 2x">
+
+            <source media="(min-width: 769px)" srcset="img/nootris_683.png 1x, img/nootris_1366.png 2x">
+            <source media="(min-width: 576px)" srcset="img/nootris_320.png 1x, img/nootris_683.png 2x">
+            <img class="immunity__img" src="img/nootris_160.png" srcset="img/nootris_320.png 2x" alt="Nootris"
+              width="160">
+          </picture>
+        </div>
+
+        <p class="immunity__additional">
+          <span class="immunity__additional-heading">Nootris помогает</span>
+          Вашему организму во время пандемии
+          и сезонных простуд
+        </p>
+      </div>
+    </section>
+  </main>
+  <script src="js/main.min.js">
+  </script>
+</body>
+
+</html>
