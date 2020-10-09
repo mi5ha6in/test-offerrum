@@ -1,0 +1,173 @@
+.offer {
+  padding: 40px 10px 40px;
+  background-color: $black-accent;
+}
+
+.offer__heading {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.19;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.offer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+}
+
+.offer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offer__item {
+  margin-top: 40px;
+}
+
+.offer__item--main {
+  order: -1;
+  margin-top: 10px;
+}
+
+.offer__description {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.offer__prices {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 120px;
+}
+
+.offer__price {
+  font-size: 20px;
+  color: $white;
+
+  &--old {
+    position: relative;
+    color: $grey;
+    font-size: 16px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 125%;
+      height: 2px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #adadad;
+    }
+  }
+}
+
+.offer__button {
+  margin-top: 20px;
+}
+
+@media (min-width: $mobile-width) {
+  .offer__heading {
+    font-size: 32px;
+  }
+
+  .offer__prices {
+    width: 200px;
+  }
+
+  .offer__price {
+    font-size: 32px;
+
+    &--old {
+      font-size: 26px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width + 0.1) {
+  .offer {
+    padding: 60px 10px;
+  }
+
+  .offer__heading {
+    font-size: 42px;
+  }
+
+  .offer__wrapper {
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    align-items: stretch;
+    justify-content: space-around;
+  }
+
+  .offer__item {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .offer__description {
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+
+  .offer__description--main {
+    font-size: 36px;
+    margin-top: 52px;
+    margin-bottom: 0;
+
+    span {
+      margin-top: 10px;
+      font-size: 24px;
+    }
+  }
+
+  .offer__item--main {
+    order: 0;
+  }
+
+  .offer__button {
+    margin-top: 67px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offer {
+    padding-top: 116px;
+    padding-bottom: 116px;
+  }
+
+  .offer__info {
+    padding-top: 75px;
+  }
+
+  .offer__wrapper {
+    margin-top: 43px;
+  }
+
+  .offer__heading {
+    font-size: 48px;
+  }
+
+  .offer__prices {
+    width: 234px;
+  }
+
+  .offer__price {
+    font-size: 48px;
+
+    &--old {
+      font-size: 36px;
+    }
+  }
+}

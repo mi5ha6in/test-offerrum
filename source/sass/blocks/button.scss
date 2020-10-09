@@ -1,0 +1,15 @@
+.button {
+  font: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 16px 54px;
+  background-color: $orange;
+  border: none;
+  border-radius: 7px;
+  transition: all 0.3s ease;
+
+  &:hover,
+  &:focus {
+    background-color: $yellow-accent;
+  }
+}
